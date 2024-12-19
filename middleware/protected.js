@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken")
 const User = require("../model/User")
 
-
+// middleware for  only Admin Route 
 exports.adminProtected = (req, res, next) => {
     const admin = req.cookies.admin
     if (!admin) {

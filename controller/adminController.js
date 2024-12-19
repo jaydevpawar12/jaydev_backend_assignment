@@ -3,7 +3,7 @@ const User = require("../model/User")
 const asyncHandler = require("express-async-handler")
 
 
-
+// its only access by the Admin : Fetch All User 
 exports.getAllUser=asyncHandler(async(req,res)=>{   
     try {
         const user="user"
