@@ -150,7 +150,7 @@ exports.resetPassword=asyncHandler(async(req,res)=>{
     }
     const hash =await  bcrypt.hash(newPassword,10)
     await User.findByIdAndUpdate(result._id,{password:hash})
-    res.status(400).json({ status:400,message:"PassWord Reset Success Please Re-Login"})
+    res.status(200).json({ status:200,message:"PassWord Reset Success Please Re-Login"})
   
 })
 
