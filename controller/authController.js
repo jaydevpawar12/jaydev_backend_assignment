@@ -19,7 +19,11 @@ if(isError){
     })
 }
 if (!validator.isEmail(email)) {
-    return res.status(400).json({status:400, message:"Email is Invalid", error: "Invalid Email" })
+    return res.status(400).json({
+        status:400,
+         message:"Email is Invalid", 
+         error: "Invalid Email" 
+        })
 }
 
 if (!validator.isStrongPassword(password)) {
@@ -146,7 +150,7 @@ exports.resetPassword=asyncHandler(async(req,res)=>{
     }
     const hash =await  bcrypt.hash(newPassword,10)
     await User.findByIdAndUpdate(result._id,{password:hash})
-    res.json({ status:400,message:"PassWord Reset Success Please Re-Login"})
+    res.status(400).json({ status:400,message:"PassWord Reset Success Please Re-Login"})
   
 })
 
