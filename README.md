@@ -166,8 +166,10 @@ Response:
 }
 
 Here are the links to the project:
-Live Project URL: [Your Live URL Here]
-GitHub Repository: [Your GitHub Repository Link Here]
+
+Live Project URL: https://jaydev-backend-assignment.onrender.com
+
+GitHub Repository: https://github.com/jaydevpawar12/jaydev_backend_assignment
 
 Additional Notes:
 Ensure Redis and MongoDB are running before starting the server.
