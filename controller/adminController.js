@@ -22,7 +22,7 @@ exports.getAllUser=asyncHandler(async(req,res)=>{
             console.log("From Database")
            return res.status(200).json({status:200,message:"Fetch Success",result:JSON.parse(value)})
         }
-        // const parseData=JSON.parse(value)
+      
     } catch (error) {
         console.log(error)
         console.error("fetching error")
