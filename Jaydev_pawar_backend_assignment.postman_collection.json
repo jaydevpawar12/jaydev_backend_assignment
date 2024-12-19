@@ -30,7 +30,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzYyY2RhOTk4ZjFhMTlhMzhiN2ZiOWQiLCJpYXQiOjE3MzQ2MTU0NjUsImV4cCI6MTczNDcwMTg2NX0.vagAxowb5Sfde6FlX95l5m1HHoCnIlm2qwJPYoqLrfU",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY0M2VmZmEwZTJiNTI1ZTI0NzJjMWYiLCJpYXQiOjE3MzQ2MjMyMzMsImV4cCI6MTczNDcwOTYzM30.HnDZqUlqwvnFFAvVeaBTR1Rr4MAOG4BaEw9VldyaZ5g",
 							"type": "string"
 						}
 					]
@@ -76,7 +76,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"ross\",\n    \"email\":\"irgwebsite01@gmail.com\",\n    \"mobile\":\"7745021762\",\n    \"password\":\"Ross@123\"\n}",
+					"raw": "{\n\t\"name\": \"admin\",\n    \"email\":\"pawarjaydev96@gmail.com\",\n    \"mobile\":\"7745021761\",\n    \"password\":\"Admin@123\",\n    \"role\":\"admin\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -84,12 +84,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/auth/register",
-					"protocol": "http",
+					"raw": "https://jaydev-backend-assignment.onrender.com/api/auth/register",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"jaydev-backend-assignment",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"auth",

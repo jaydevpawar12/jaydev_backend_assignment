@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer")
-
+// Email functionality
 const sendEmail = ({ to, subject, message }) => new Promise((resolve, reject) => {
     try {
         const mailer = nodemailer.createTransport({

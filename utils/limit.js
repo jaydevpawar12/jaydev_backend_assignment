@@ -1,4 +1,6 @@
 const rateLimit=require("express-rate-limit")
+
+// create limiter for lgoin
 const loginLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, 
     max: 3, 

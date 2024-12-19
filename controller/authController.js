@@ -36,7 +36,7 @@ if(result){
 return res.status(400).json({ 
     status:400,
     message:"Admin Already Exists",
-    error})
+    })
 }
 // password hashing 
 const hash=await bcrypt.hash(password,10)
@@ -76,7 +76,7 @@ if(result){
 return res.status(400).json({ 
     status:400,
     message:"User Already Exists",
-    error})
+    })
 }
 // password hashing 
 const hash=await bcrypt.hash(password,10)
@@ -171,7 +171,7 @@ exports.resetPassword=asyncHandler(async(req,res)=>{
   
 })
 
-// 
+//Logout user and admin 
 exports.logoutUser = asyncHandler(async (req, res) => {
     if (req.cookies.auth) {
         res.clearCookie("auth")

@@ -1,5 +1,6 @@
 const validator = require("validator")
 
+// creat to check the required fields
 exports.checkEmpty = (config) => {
     const error = {}
     let isError = false
