@@ -173,12 +173,15 @@ exports.resetPassword=asyncHandler(async(req,res)=>{
 
 //Logout user and admin 
 exports.logoutUser = asyncHandler(async (req, res) => {
-    if (req.cookies.auth) {
-        res.clearCookie("auth")
-    }else{
-        res.clearCookie("admin")
-    }
+  
+    res.clearCookie("auth")
  
     res.status(200).json({status:200, message: " logout successfully" })
 })
 
+exports.logoutAdmin = asyncHandler(async (req, res) => {
+    res.clearCookie("admin")
+    res.status(200).json({status:200, message: " logout successfully" })
+})
+
+    
