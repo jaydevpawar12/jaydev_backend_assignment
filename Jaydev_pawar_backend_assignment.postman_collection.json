@@ -178,12 +178,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/auth/logout",
-					"protocol": "http",
+					"raw": "https://jaydev-backend-assignment.onrender.com/api/auth/logout",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"jaydev-backend-assignment",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"auth",
@@ -282,6 +283,28 @@
 						"api",
 						"auth",
 						"register-admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://jaydev-backend-assignment.onrender.com/api/auth/logout-admin",
+					"protocol": "https",
+					"host": [
+						"jaydev-backend-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout-admin"
 					]
 				}
 			},
