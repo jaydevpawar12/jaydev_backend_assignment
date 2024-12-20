@@ -165,6 +165,12 @@ Response:
   ]
 }
 
+Here are the links to the project:
+
+Live Project URL: https://jaydev-backend-assignment.onrender.com
+
+GitHub Repository: https://github.com/jaydevpawar12/jaydev_backend_assignment
+
 Additional Notes:
 Ensure Redis and MongoDB are running before starting the server.
 You can modify the caching time or expiration values based on your use case.
